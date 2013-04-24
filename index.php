@@ -30,7 +30,9 @@ $app->post('/v2/checkout/', function() use ($app) {
 </checkout>';    
 });
 
-$app->get('/v2/checkout/payment.html?code=', function() use ($app) {
-    return 'ok';
+$app->get('/v2/checkout/payment.html', function(Request $request) use ($app) {
+    $query = $request->query;
+    $code = $query->get('code');
+    return $code;
 });
 $app->run();
