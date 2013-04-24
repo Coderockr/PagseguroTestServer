@@ -1,0 +1,7 @@
+{
+    "require": {
+        "silex/silex": "*",
+        "monolog/monolog": ">=1.0.0"
+    },
+    "minimum-stability": "dev"
+}
